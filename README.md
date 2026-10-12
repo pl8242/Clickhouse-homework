@@ -25,6 +25,7 @@
 
    `mkdir C:\Users\pl081\clickhouse-hw`
    
+
 <img width="914" height="365" alt="рабочая папка" src="https://github.com/user-attachments/assets/887b186f-2cd8-4bef-bc0f-22f41b0e4fda" />
 
 2. Создаем подкаталоги:
