@@ -34,3 +34,10 @@
 
   <img width="2342" height="548" alt="icon_3" src="https://github.com/user-attachments/assets/5d94cc97-3467-4a1e-90dd-27d3cca050e1" />
 
+4. Создаем БД и Таблицу
+   ```PowerShell
+   docker exec -i clickhouse-second clickhouse-client --query "\$(Get-Content '01-create-database.sql' -Raw)"
+   docker exec -i clickhouse-second clickhouse-client --query "\$(Get-Content '02-create-table.sql' -Raw)"
+  <img width="1980" height="66" alt="icon_4" src="https://github.com/user-attachments/assets/026fff19-ead6-4ba6-8299-723f17e3771a" />
+
+5. Создаем 
