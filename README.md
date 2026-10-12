@@ -25,10 +25,12 @@
   <img width="914" height="365" alt="рабочая папка" src="https://github.com/user-attachments/assets/887b186f-2cd8-4bef-bc0f-22f41b0e4fda" />
 2. Создаем подкаталоги
   ```PowerShell
-  mkdir data
-  mkdir logs
-  <img width="806" height="595" alt="подкаталоги" src="https://github.com/user-attachments/assets/504bcf21-92ac-4c5e-bbab-0efa96be88c3" />
+     mkdir data, logs
+  <img width="810" height="296" alt="icon_2" src="https://github.com/user-attachments/assets/0d7e7bfd-3e2a-4229-af5e-ce1930bd6856" />
 
 3. Запустить ClickHouse в Docker используя 'docker-compose.yaml' :
-   ```bash
-   docker run -d --name clickhouse-server -p 8123:8123 -p 9000:9000 clickhouse/clickhouse-server
+   ```PowerShell
+   docker compose up
+
+  <img width="2342" height="548" alt="icon_3" src="https://github.com/user-attachments/assets/5d94cc97-3467-4a1e-90dd-27d3cca050e1" />
+
