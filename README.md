@@ -40,4 +40,9 @@
    docker exec -i clickhouse-second clickhouse-client --query "\$(Get-Content '02-create-table.sql' -Raw)"
   <img width="1980" height="66" alt="icon_4" src="https://github.com/user-attachments/assets/026fff19-ead6-4ba6-8299-723f17e3771a" />
 
-5. Создаем 
+5. Загружаем данные
+   ```PowerShell
+
+  <img width="2202" height="179" alt="icon_5" src="https://github.com/user-attachments/assets/f9ae09f1-c2a9-4bbc-a940-238faee175d5" />
+
+  
