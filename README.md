@@ -25,7 +25,6 @@
 
    `mkdir C:\Users\pl081\clickhouse-hw`
    
-
 <img width="914" height="365" alt="рабочая папка" src="https://github.com/user-attachments/assets/887b186f-2cd8-4bef-bc0f-22f41b0e4fda" />
 
 2. Создаем подкаталоги:
@@ -39,6 +38,9 @@
    `docker compose up`
    
 <img width="2342" height="548" alt="icon_3" src="https://github.com/user-attachments/assets/5d94cc97-3467-4a1e-90dd-27d3cca050e1" />
+
+<img width="2186" height="889" alt="icon_9" src="https://github.com/user-attachments/assets/2d3a9fb1-5ab4-43e7-8fd8-fa1ce666cc90" />
+
 
 4. Создаем БД и Таблицу:
    
@@ -60,5 +62,8 @@
    
 <img width="626" height="125" alt="icon_7" src="https://github.com/user-attachments/assets/cc2a3220-4630-45fb-9d7f-975000a82d4d" />
 
+7. Power BI
+
+   <img width="679" height="1201" alt="icon_8" src="https://github.com/user-attachments/assets/74966722-ac14-466e-990b-a728a470ebf4" />
 
   
