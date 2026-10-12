@@ -25,6 +25,7 @@
    mkdir C:\Users\pl081\clickhouse-hw
    
 <img width="914" height="365" alt="рабочая папка" src="https://github.com/user-attachments/assets/887b186f-2cd8-4bef-bc0f-22f41b0e4fda" />
+
 2. Создаем подкаталоги:
 
    mkdir data, logs
@@ -37,14 +38,14 @@
    
 <img width="2342" height="548" alt="icon_3" src="https://github.com/user-attachments/assets/5d94cc97-3467-4a1e-90dd-27d3cca050e1" />
 
-5. Создаем БД и Таблицу:
+4. Создаем БД и Таблицу:
    
    docker exec -i clickhouse-second clickhouse-client --query "\$(Get-Content '01-create-database.sql' -Raw)"
    docker exec -i clickhouse-second clickhouse-client --query "\$(Get-Content '02-create-table.sql' -Raw)"
    
 <img width="1980" height="66" alt="icon_4" src="https://github.com/user-attachments/assets/026fff19-ead6-4ba6-8299-723f17e3771a" />
 
-6. Загружаем данные:
+5. Загружаем данные:
    
    $ddl = Get-Content "02-create-table.sql" -Raw
    docker exec -i clickhouse-second clickhouse-client --user=admin --password=MySecret123 --query="$ddl"
