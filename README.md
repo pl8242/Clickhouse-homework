@@ -20,8 +20,14 @@
 
 ### Как воспроизвести
 
+Используем VS Code, docker.desktop, powershell
+
+<img width="1272" height="800" alt="icon_10" src="https://github.com/user-attachments/assets/2d61d814-46eb-4a29-aff3-0d8831838b9e" />
+
+   
 В PowerShell последовательно выполняем
-1. Создать локальную рабочую папку, в которой будут созданы рабочие скрипты и из которой вызовем bash:
+1. Подготовка рабочей директории
+   Создаем папку проекта, в которой будут размещены рабочие скрипты:
 
    `mkdir C:\Users\pl081\clickhouse-hw`
    
@@ -44,14 +50,16 @@
 
 4. Создаем БД и Таблицу:
    
-   `docker exec -i clickhouse-second clickhouse-client --query "\$(Get-Content '01-create-database.sql' -Raw)"`
-   `docker exec -i clickhouse-second clickhouse-client --query "\$(Get-Content '02-create-table.sql' -Raw)"`
+   `Get-Content "01-create-database.sql" -Raw | docker exec -i clickhouse-second clickhouse-client --query=""`
+
+   `Get-Content "02-create-table.sql" -Raw | docker exec -i clickhouse-second clickhouse-client --query=""`
    
 <img width="1980" height="66" alt="icon_4" src="https://github.com/user-attachments/assets/026fff19-ead6-4ba6-8299-723f17e3771a" />
 
 5. Загружаем данные:
    
    `$ddl = Get-Content "02-create-table.sql" -Raw`
+   
    `docker exec -i clickhouse-second clickhouse-client --user=admin --password=MySecret123 --query="$ddl"`
 
 <img width="2202" height="117" alt="icon_6" src="https://github.com/user-attachments/assets/3b614c97-1653-4183-89b4-b527e6caa9c2" />
