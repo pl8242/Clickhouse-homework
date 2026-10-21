@@ -56,22 +56,17 @@
    
 <img width="1980" height="66" alt="icon_4" src="https://github.com/user-attachments/assets/026fff19-ead6-4ba6-8299-723f17e3771a" />
 
-5. Загружаем данные:
-   
-   `$ddl = Get-Content "02-create-table.sql" -Raw`
-   
-   `docker exec -i clickhouse-second clickhouse-client --user=admin --password=MySecret123 --query="$ddl"`
-
-<img width="2202" height="117" alt="icon_6" src="https://github.com/user-attachments/assets/3b614c97-1653-4183-89b4-b527e6caa9c2" />
-
-6. Выполняем аналитический запрос, выводим:
+5. Выполняем загрузку данных и аналитический запрос, перед этим очищаем ранее загруженные данные. выводим:
    
    `.\ETL.ps1`
    
-<img width="626" height="125" alt="icon_7" src="https://github.com/user-attachments/assets/cc2a3220-4630-45fb-9d7f-975000a82d4d" />
+   <img width="613" height="294" alt="ETL_результат_powershell" src="https://github.com/user-attachments/assets/f8d6113c-19fe-40c6-9edd-e72095df0357" />
+
+
 
 7. Power BI
 
-   <img width="679" height="1201" alt="icon_8" src="https://github.com/user-attachments/assets/74966722-ac14-466e-990b-a728a470ebf4" />
+   <img width="628" height="392" alt="icon_13_power_bi" src="https://github.com/user-attachments/assets/62342cb7-cd5e-46b3-bbd5-36776d050ee9" />
+
 
   
